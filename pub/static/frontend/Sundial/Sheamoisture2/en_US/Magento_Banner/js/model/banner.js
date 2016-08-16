@@ -1,0 +1,1 @@
+/var/www/dev.i3lsundial/html/vendor/magento/module-banner/view/frontend/web/js/model/banner.js

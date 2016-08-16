@@ -1,0 +1,45 @@
+Magento\Catalog\Model\Product\Attribute\Frontend\Image
+
+
+    [backend_table] => 
+	[frontend_model] => Magento\Catalog\Model\Product\Attribute\Frontend\Image
+    [frontend_input] => media_image
+    [frontend_label] => Base Image
+				
+
+
+
+				
+DELETE emg.* FROM catalog_product_entity_media_gallery as emg
+			LEFT JOIN (SELECT emg.value_id,count(emgv.value_id) as cnt FROM  catalog_product_entity_media_gallery_value as emgv JOIN catalog_product_entity_media_gallery as emg 
+			ON emg.value_id=emgv.value_id GROUP BY emg.value_id ) as t1 ON t1.value_id=emg.value_id
+			WHERE attribute_id IN (84,85,86) AND t1.cnt IS NULL
+
+INSERT INTO catalog_product_entity_varchar (value_id, attribute_id, store_id, entity_id, value) VALUES (NULL, '84', '0', '2273', 'xx.jpg');
+
+
+			
+					
+Product & Customer migration - 12
+
+
+Destini Locator ->
+MotionPoint ->
+
+
+Desk.com Salesforce Desk -> Support chat
+Google Tag Manager ->
+
+=======================================					
+					
+Destini Locator
+Desk.com Salesforce Desk
+MotionPoint
+LiveFyre
+PunchOut2Go
+Google Tag Manager
+
+
+
+<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+

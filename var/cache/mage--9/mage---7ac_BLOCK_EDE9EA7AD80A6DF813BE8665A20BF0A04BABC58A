@@ -1,0 +1,40 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1470825498;s:6:"expire";i:1470832698;s:4:"tags";s:60:"7ac_CATALOG_CATEGORY,7ac_STORE_GROUP,7ac_BLOCK_HTML,7ac_MAGE";}
+    <div class="block filter">
+        <div class="title">
+            <strong>Filter</strong>
+        </div>
+        <div class="content">
+            <strong class="subtitle">Shopping Options</strong>
+            <dl class="options" id="narrow-by-list2">
+                <dt>Category</dt>
+                <dd>
+                    <ol class="items">
+                                                                                    <li class="item">
+                                    <a href="http://dev.i3lsundial.com/face/bar-soap.html">Bar Soap</a>
+                                    <span class="count">2</span>
+                                </li>
+                                                                                                                <li class="item">
+                                    <a href="http://dev.i3lsundial.com/catalog/category/view/s/cream/id/35/">Cream</a>
+                                    <span class="count">4</span>
+                                </li>
+                                                                                                                <li class="item">
+                                    <a href="http://dev.i3lsundial.com/face/mask.html">Mask</a>
+                                    <span class="count">3</span>
+                                </li>
+                                                                                                                <li class="item">
+                                    <a href="http://dev.i3lsundial.com/face/serum.html">Serum</a>
+                                    <span class="count">1</span>
+                                </li>
+                                                                                                                <li class="item">
+                                    <a href="http://dev.i3lsundial.com/catalog/category/view/s/toner/id/38/">Toner</a>
+                                    <span class="count">1</span>
+                                </li>
+                                                                                                                <li class="item">
+                                    <a href="http://dev.i3lsundial.com/catalog/category/view/s/wash-scrub/id/39/">Wash &amp; Scrub</a>
+                                    <span class="count">3</span>
+                                </li>
+                                                                        </ol>
+                </dd>
+            </dl>
+        </div>
+    </div>

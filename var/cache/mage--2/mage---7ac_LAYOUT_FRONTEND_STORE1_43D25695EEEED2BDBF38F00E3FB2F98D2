@@ -1,0 +1,4 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1470996275;s:6:"expire";i:9999999999;s:4:"tags";s:82:"7ac_AUTHORIZENET_DIRECTPOST_PAYMENT_RESPONSE,7ac_LAYOUT_GENERAL_CACHE_TAG,7ac_MAGE";}
+<container name="root">
+   <block class="Magento\Payment\Block\Transparent\Iframe" name="authorizenet_directpost_iframe" template="Magento_Payment::transparent/iframe.phtml"/>
+</container>

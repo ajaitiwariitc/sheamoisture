@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+http://ant.apache.org
+ANT BUILD SCRIPT
+On Linux just install ant package trough your favorite package manager
+On Windows you can use great instalator provided on URL
+  http://code.google.com/p/winant/downloads/list
+-->
+
+<project name="TBSTR" default="usage">
+
+    <target name="usage">
+        <echo>
+ant -f build.xml usage    -- it shows this help message
+ant -f build.xml check    -- it shows set deploy directory
+ant -f build.xml deploy -Ddeploy_dir=/any/path  -- it deploys project's code to deployment directory
+        </echo>
+    </target>
+	
+	<condition property="isOSUnix">
+		<os family="unix"/>
+	</condition>
+	
+	<condition property="isOSWindows">
+		<os family="windows"/>
+	</condition>
+	
+    <target name="check">
+        <echo>
+Base dir:     ${basedir}
+        -- here we are
+Deploy dir:   ${deploy_dir}
+        -- there will be module deployed
+        </echo>
+    </target>
+
+    <target name="deploy">
+		<echo>${ant.project.name}</echo>
+		<copy todir="${deploy_dir}" verbose="${verbose}" overwrite="${copy_overwrite}" preservelastmodified="true">
+			<fileset dir=".">
+				<include name="**/*"/>
+				<exclude name="build.xml"/>
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="setpermissions.unix" if="isOSUnix">
+		<echo>Setting Permissions on Linux</echo>
+		<chmod file="./General_Commands/shell_executables.sh" perm="755"/>
+		<exec executable="sh">
+				<arg value="-c" />
+				<arg value="./General_Commands/shell_executables.sh ${deploy_dir}"/>
+		</exec>
+	</target>
+
+</project>
